@@ -8,6 +8,7 @@ Set Height 700
 Set Theme "Catppuccin Mocha"
 Set Padding 20
 Set TypingSpeed 45ms
+Set LoopOffset 40%
 
 Hide
 Type "export PATH=/tmp/demoenv/bin:$PATH && clear" Enter
