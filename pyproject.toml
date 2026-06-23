@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dag-lint"
+version = "0.1.0"
+description = "A static analyzer that catches Apache Airflow DAG anti-patterns before they hit production."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sraavan Chevireddy" }]
+keywords = ["airflow", "linter", "static-analysis", "data-engineering", "dags", "ci"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+dag-lint = "daglint.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/SraavanChevireddy/dag-lint"
+
+[tool.setuptools.packages.find]
+include = ["daglint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
