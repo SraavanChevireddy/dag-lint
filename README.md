@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 
+![dag-lint in action](demo/demo.gif)
+
 Airflow lets you write DAGs that *look* fine and pass review, then quietly melt your scheduler or flood prod with backfill runs on deploy. These mistakes are invisible in a code diff but obvious to a linter. **dag-lint** parses your DAG files with Python's AST (it never imports or executes them, so it's fast and safe) and flags the classics.
 
 ## What it catches
